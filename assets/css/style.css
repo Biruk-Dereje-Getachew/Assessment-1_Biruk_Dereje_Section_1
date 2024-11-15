@@ -1,9 +1,10 @@
-h1 {
-  display: flex;
-  background-color: rgb(217, 238, 217);
-  justify-content: center;
-  padding: 2%;
-  margin: 0;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
@@ -11,6 +12,13 @@ body {
   padding: 0;
   background-color: rgb(244, 244, 244);
   font-family: sans-serif;
+}
+
+h1 {
+  background-color: #d9eed9;
+  text-align: center;
+  padding: 2%;
+  margin: 0%;
 }
 
 nav ul {
@@ -24,38 +32,43 @@ nav ul {
 
 nav ul li a {
   display: block;
-  color: rgba(0, 255, 0, 100%);
+  color: #4caf50;
   border-radius: 0.5em;
   padding: 0.5em 1em;
   margin: 1em;
   text-decoration: none;
-}
-
-main > h2 {
-  margin: 0.5% 8%;
+  text-align: center;
 }
 
 main {
-  margin: 0em 0em;
+  margin: 1em 0em;
+}
+
+main > h2 {
+  margin: 3.5% 8%;
 }
 
 .product-list {
   display: flex;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
   flex: 1 1 auto;
   margin: 0 10%;
+  width: 80%;
 }
 
 article.product {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin: 1.5em;
+  min-width: 200px;
+  align-content: space-between;
   padding: 1em;
   box-shadow: 0 0 0.5em gray;
-  width: 20%;
+  width: 30%;
   background-color: rgb(255, 255, 255);
   border-radius: 3%;
   text-align: center;
@@ -72,7 +85,7 @@ img {
 }
 
 footer p {
-  background-color: green;
+  background-color: #124314;
   color: white;
   text-align: center;
   margin: 0;
